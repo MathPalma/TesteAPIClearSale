@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TesteAPIClearSale.Services;
+using TesteAPIClearSale.Services.Implementations;
 
 namespace TesteAPIClearSale
 {
@@ -26,6 +28,9 @@ namespace TesteAPIClearSale
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Dependency Injection
+            services.AddScoped<IPersonService, PersonServiceImplementation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

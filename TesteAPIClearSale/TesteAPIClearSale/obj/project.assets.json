@@ -88,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale.csproj",
+      "projectUniqueName": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale.csproj",
       "projectName": "TesteAPIClearSale",
-      "projectPath": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale.csproj",
+      "projectPath": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale.csproj",
       "packagesPath": "C:\\Users\\Sh4u\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\obj\\",
+      "outputPath": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sh4u\\AppData\\Roaming\\NuGet\\NuGet.Config",
