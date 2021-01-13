@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "m82Lb85WAV1kSO9v1ToME4PnbWVQ2RFmzV5IBVLSiBpBOMzBHCjYd9Z//KuKc2trVEkd6vDBNcU5UCOWzqmlBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sh4u\\Documents\\CLEAR SALE\\Programas\\TesteAPIClearSale\\TesteAPIClearSale\\TesteAPIClearSale.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sh4u\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\Sh4u\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Sh4u\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
