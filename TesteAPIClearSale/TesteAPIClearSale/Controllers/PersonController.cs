@@ -21,30 +21,36 @@ namespace TesteAPIClearSale.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult<Person> Get()
         {
 
             return Ok(_personService.FindAll());
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(long id)
+        public ActionResult<Person> Get(long id)
         {
             var person = _personService.FindById(id);
-            if (_personService == null) return NotFound();
+            if (person == null) return NotFound();
             return Ok(person);
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Person person)
+        public ActionResult Post([FromBody] Person person)
         {
 
-            if (_personService == null) return BadRequest();
-            return Ok(_personService.Create(person));
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var p = _personService.Create(person);
+
+            return CreatedAtAction("Get", new { id = person.Id }, person);
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] Person person)
+        public ActionResult Put([FromBody] Person person)
         {
 
             if (_personService == null) return BadRequest();
@@ -52,10 +58,17 @@ namespace TesteAPIClearSale.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        public ActionResult Delete(long id)
         {
+            var existingItem = _personService.FindById(id);
+
+            if (existingItem == null)
+            {
+                return NotFound();
+            }
+
             _personService.Delete(id);
-            return NoContent();
+            return Ok();
         }
 
     }
